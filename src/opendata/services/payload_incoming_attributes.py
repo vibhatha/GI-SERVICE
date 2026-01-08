@@ -1,5 +1,5 @@
 from traceback import print_tb
-from src.models import ENTITY_PAYLOAD, ATTRIBUTE_PAYLOAD
+from opendata.models import ENTITY_PAYLOAD, ATTRIBUTE_PAYLOAD
 import requests
 from datetime import datetime
 import json
@@ -18,7 +18,7 @@ class IncomingServiceAttributes:
         req_entityId = entityId
         req_year = ENTITY_PAYLOAD.year
        
-        url = f"{self.config['BASE_URL_QUERY']}/v1/entities/{req_entityId}/relations"
+        url = f"{self.config['BASE_URL_QUERY']}/v1/entities/{x}/relations"
         
         payload = {
             "id": "",

@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
-from src.models import ENTITY_PAYLOAD, ATTRIBUTE_PAYLOAD, WRITE_PAYLOAD
-from src.services import IncomingServiceAttributes, IncomingServiceOrgchart, WriteAttributes
-from src.dependencies import get_config
+from opendata.models import ENTITY_PAYLOAD, ATTRIBUTE_PAYLOAD, WRITE_PAYLOAD
+from opendata.services import IncomingServiceAttributes, IncomingServiceOrgchart, WriteAttributes
+from opendata.dependencies import get_config
 from chartFactory.utils import transform_data_for_chart
 
 router = APIRouter()

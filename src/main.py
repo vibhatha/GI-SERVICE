@@ -1,10 +1,8 @@
 from fastapi import FastAPI
-from src.routers import payload_incoming_router
+from opendata.routers import payload_incoming_router
 from dotenv import load_dotenv
 import os
 from fastapi.middleware.cors import CORSMiddleware
-
-
 
 
 app = FastAPI(
